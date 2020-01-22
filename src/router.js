@@ -1,8 +1,8 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 
-import SignIn from './components/SignIn.vue'
 import Welcome from './components/Welcome.vue'
+import SignUp from './components/SignUp.vue'
 
 Vue.use(Router)
 
@@ -12,14 +12,14 @@ const router = new Router({
   routes: [
     {
       path: '/',
-      name: 'sign-in',
-      component: SignIn,
-    },
-    {
-      path: '/onboarding',
       name: 'onboarding',
       component: Welcome,
-    }
+    },
+    {
+      path: '/signup',
+      name: 'sign-up',
+      component: SignUp,
+    },
   ]
 })
 

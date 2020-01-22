@@ -1,7 +1,9 @@
 <template>
   <div>
     <div class="nav-icons">
-      <font-awesome-icon icon="arrow-left" class="back-btn fa-2x" color="#1F2845"/>
+      <router-link to="/">
+        <font-awesome-icon icon="arrow-left" class="back-btn fa-2x" color="#1F2845"/>
+      </router-link>
     </div>
     <div class="welcome-text">
       <font-awesome-icon icon="user" class="user-icon fa-3x" color="#1F2845"></font-awesome-icon>

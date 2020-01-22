@@ -45,7 +45,7 @@
         <v-btn color="primary" block elevation="13">Sign In</v-btn>
       </div>
       <div class="create-acc-btn">
-        <v-btn color="accent" text block>Create Account</v-btn>
+        <v-btn color="accent" text block to="/signup">Create Account</v-btn>
       </div>
     </div>
   </div>
