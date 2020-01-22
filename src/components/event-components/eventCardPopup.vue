@@ -105,12 +105,13 @@
   }
 </script>
 
-<style lang="sass" scoped>
-.background-blur
-  background: white
-  opacity: 0.7
-  height: 100%
-  width: 100%
-  position: fixed
-  z-index: 0
+<style lang="scss" scoped>
+.background-blur {
+  background: white;
+  opacity: 0.7;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  z-index: 0;
+}
 </style>

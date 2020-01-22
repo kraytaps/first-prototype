@@ -1,0 +1,78 @@
+// Explore Window
+
+.explore-window {
+  bottom: 0;
+  font-size: 14px;
+  position: fixed;
+  width: 100%;
+  .explore-window__block {
+    height: 8vh;
+    width: 100%;
+    background: $white;
+    @media screen and (max-height: 600px){
+      height: 8vh;
+    };
+    ul {
+      display: flex;
+      flex-direction: row;
+      list-style-type: none;
+      padding: 0;
+      width: 100%;
+      justify-content: center;
+        li {
+          z-index: 2;
+          img {
+            width: 1.5em;
+            margin: $icon-distance;
+          }
+        }
+        li:nth-child(2) {
+          margin-right: $icon-distance-special;
+        }
+        li:nth-child(3) {
+          margin-left: $icon-distance-special;
+        }
+    }
+  }
+
+  .explore-window__button {
+    bottom: 8vh;
+    display: flex;
+    flex-direction: column;
+    left: 50%;
+    align-items: center;
+    position: absolute;
+    transform: translate(-50%, 50%);
+    @media screen and (max-height: 600px) {
+      bottom: 10vh
+    }
+    .explore-window__button-icon {
+      width: 7em;
+      height: 7em;
+      cursor: pointer;
+      g circle {
+        fill: $blue;
+        fill-opacity: 0.85;
+        transition: all 0.3s;
+      }
+      &:hover {
+        g circle {
+          fill-opacity: 1;
+        }
+      }
+    }
+    .explore-window__button-text {
+      padding-left: 1em;
+      padding-bottom: 1em;
+      width: 6em;
+    }
+    #explore-text {
+      color: $blue;
+      font-family: $montserrat;
+      margin: 0 auto 0.5em;
+      font-weight: 600;
+      font-size: 1em;
+      letter-spacing: 0.2em;
+    }
+  }
+}

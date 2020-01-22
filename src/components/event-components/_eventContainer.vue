@@ -5,6 +5,6 @@
 <script>
 
 </script>
-<style lang="sass" scoped>
+<style lang="scss" scoped>
   // for overwrites
 </style>

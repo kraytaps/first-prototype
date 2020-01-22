@@ -1,0 +1,90 @@
+// Event Card
+
+.badge {
+  font-family: $montserrat;
+  text-transform: uppercase;
+  font-weight: 600;
+  line-height: 1em;
+  font-style: normal;
+  color: $blue;
+  font-size: 0.825em;
+  margin: 0 1.5em 0 0;
+  padding: 0.5em 1em;
+  user-select: none;
+}
+.badge-pill {
+  border-radius: 0.75em;
+  border-bottom-left-radius: 0;
+}
+
+.eventCard {
+  padding: $card-width / 25;
+  .card-title {
+    cursor: pointer;
+    font-family: $nunito;
+    font-size: $font-size-title * 1.1;
+    font-weight: 700;
+    font-style: normal;
+    letter-spacing: -0.0375em;
+    margin-bottom: $large-card-font / 10;
+    transition: all 0.4s ease;
+    &:hover {
+      color: $blue-grey;
+      transition: all 0.2s ease;
+    }
+  }
+  .eventCard_location {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    .location-icon {
+      width: 15px;
+      height: 18px;
+      float: left;
+    }
+    .eventCard_locationText {
+      float: right;
+      margin: 0.25em 0 0 0.5em;
+      font-family: $nunito;
+      font-size: $font-size-normal;
+      font-weight: 400;
+      line-height: $font-size-small;
+      color: $blue-grey;
+    }
+  }
+  .eventCard_rating {
+    ul {
+      list-style-type: none;
+      padding: 0;
+      margin: 0.3em 0 0.5em;
+      li {
+        display: inline;
+        margin: 0 0.2em 0 0;
+        img {
+          height: 1em;
+        }
+      }
+    }
+  }
+  .card-title--large {
+    font-size: $font-size-title;
+    font-weight: bold;
+    font-style: normal;
+    font-family: $montserrat;
+  }
+  .card {
+    border: none;
+  }
+  .card-img-top {
+    border-radius: 10px;
+  }
+  .eventCard_text {
+    font-size: $small-card-font;
+  }
+  .card-body {
+    padding-top: $small-card-font / 2;
+    padding-bottom: $small-card-font / 2;
+    padding-left: $card-width / 25;
+    padding-right: $card-width / 25;
+  }
+}
