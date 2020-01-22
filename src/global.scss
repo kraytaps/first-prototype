@@ -1,0 +1,17 @@
+// font imports
+@import url('https://fonts.googleapis.com/css?family=Nunito:400,600,700,800&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,600,700&display=swap');
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
+// overwrites
+// @import 'node_modules\vuetify\src\styles\tools\_elevation.sass';
+@import '~vuetify/src/styles/tools/_elevation.sass';
+
+$shadow-key-umbra: rgba(#1a237e, 0.2);
+$shadow-key-penumbra: rgba(#1a237e, 0.14);
+$shadow-key-ambient: rgba(#1a237e, 0.12);
