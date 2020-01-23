@@ -15,7 +15,16 @@ import { far } from '@fortawesome/free-regular-svg-icons'
 import { fab } from '@fortawesome/free-brands-svg-icons'
 import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
 import vuetify from './plugins/vuetify';
+import VueMq from 'vue-mq'
 
+Vue.use(VueMq, {
+  breakpoints: { // default breakpoints - customize this
+    sm: 450,
+    md: 1250,
+    lg: Infinity,
+  },
+  defaultBreakpoint: 'sm' // customize this for SSR
+})
 Vue.use(BootstrapVue)
 Vue.use(IconsPlugin)
 library.add(fas, far, fab);

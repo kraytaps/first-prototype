@@ -17,6 +17,7 @@
     "bootstrap-vue": "^2.2.2",
     "core-js": "^3.4.4",
     "vue": "^2.6.11",
+    "vue-mq": "^1.0.1",
     "vuetify": "^2.2.4"
   },
   "devDependencies": {
